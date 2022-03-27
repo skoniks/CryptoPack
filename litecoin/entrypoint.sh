@@ -11,7 +11,7 @@ rpcallowip=0.0.0.0/0" \
 > /root/config.conf
 mkdir -p /root/wallets
 mkdir -p /var/blockchain
-/usr/local/bin/bitcoind \
+/usr/local/bin/litecoind \
 -conf=/root/config.conf \
 -walletdir=/root/wallets \
 -datadir=/var/blockchain
