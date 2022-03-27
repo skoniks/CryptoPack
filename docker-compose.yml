@@ -1,0 +1,14 @@
+services:
+  bitcoin:
+    build: ./bitcoin
+    environment:
+      - REP=https://github.com/bitcoin/bitcoin.git
+      - TAG=v22.0
+    ports:
+      - 127.0.0.1:8343:8343
+      - 127.0.0.1:8342:8342
+    volumes:
+      - ./bitcoin/data:/root
+      - bitcoin:/var/bitcoin
+volumes:
+  bitcoin: null
