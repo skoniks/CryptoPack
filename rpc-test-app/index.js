@@ -1,14 +1,14 @@
 var request = require('request');
 
 const host = '127.0.0.1';
-const port = '8342';
-const username = 'btcuser';
-const password = 'je6AgqRMpLy78rqv';
+const port = '9342';
+const username = 'user';
+const password = 'Ordkj1QpzRW3FtWKYxiBFuccIUHfah';
 
 const auth = new Buffer.from(username + ':' + password).toString('base64');
 
 request(
-  'http://127.0.0.1:8342/',
+  `http://${host}:${port}`,
   {
     method: 'POST',
     headers: {

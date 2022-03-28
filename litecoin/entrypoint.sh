@@ -1,17 +1,17 @@
 #!/bin/sh
 echo "listen=0
-port=$PORT
+port=9333
 prune=$PRUNE
 server=1
 rpcuser=$RPC_USER
 rpcpassword=$RPC_PASS
 rpcbind=0.0.0.0
-rpcport=$RPC_PORT
+rpcport=9332
 rpcallowip=0.0.0.0/0" \
-> /root/config.conf
+  > /root/config.conf
 mkdir -p /root/wallets
 mkdir -p /var/blockchain
 /usr/local/bin/litecoind \
--conf=/root/config.conf \
--walletdir=/root/wallets \
--datadir=/var/blockchain
+  -conf=/root/config.conf \
+  -walletdir=/root/wallets \
+  -datadir=/var/blockchain
