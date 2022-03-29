@@ -10,6 +10,7 @@ rpcport=9332
 rpcallowip=0.0.0.0/0" \
   > /root/config.conf
 mkdir -p /root/wallets
+mkdir -p /root/backups
 mkdir -p /var/blockchain
 /usr/local/bin/litecoind \
   -conf=/root/config.conf \

@@ -10,6 +10,7 @@ services:
       - ${BTC_RPC_PORT}:8332
     volumes:
       - ./bitcoin/wallets:/root/wallets
+      - ./bitcoin/backups:/root/backups
       - bitcoin:/var/blockchain
   litecoin:
     build: ./litecoin
@@ -22,6 +23,7 @@ services:
       - ${LTC_RPC_PORT}:9332
     volumes:
       - ./litecoin/wallets:/root/wallets
+      - ./litecoin/backups:/root/backups
       - litecoin:/var/blockchain
 volumes:
   bitcoin: null

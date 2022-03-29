@@ -10,6 +10,7 @@ rpcport=8332
 rpcallowip=0.0.0.0/0" \
   > /root/config.conf
 mkdir -p /root/wallets
+mkdir -p /root/backups
 mkdir -p /var/blockchain
 /usr/local/bin/bitcoind \
   -conf=/root/config.conf \

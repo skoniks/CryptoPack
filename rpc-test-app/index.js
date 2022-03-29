@@ -3,6 +3,7 @@ var request = require('request');
 const host = '127.0.0.1';
 const port = '9342';
 const username = 'user';
+const password1 = 'yRGDFN4bZ00Ktl0XhaOXMwhYCWpAge';
 const password = 'Ordkj1QpzRW3FtWKYxiBFuccIUHfah';
 
 const auth = new Buffer.from(username + ':' + password).toString('base64');
@@ -21,8 +22,6 @@ request(
     }),
   },
   (err, _, body) => {
-    console.info(body);
-
     if (err) {
       console.error(err);
     } else
